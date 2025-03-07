@@ -6,7 +6,7 @@
 // Izlaz:
 // Najveći broj iz liste.
 
-function largest_num_in_array(array) {
+function LargestNumInArray(array) {
     for (let num of array) {
         if (!(num >= -1000 && num <= 1000)) {
             return false;
@@ -24,7 +24,7 @@ function largest_num_in_array(array) {
 }
 
 let nums = [100, 200, 300, 400, 500];
-console.log(largest_num_in_array(nums));
+console.log(LargestNumInArray(nums));
 
 let nums2 = [100, 1500, 300];
-console.log(largest_num_in_array(nums2));
+console.log(LargestNumInArray(nums2));

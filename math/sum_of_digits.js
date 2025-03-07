@@ -6,7 +6,7 @@
 // Izlaz:
 // Celi broj – zbir njegovih cifara.
 
-function sum_of_digits(num) {
+function SumOfDigits(num) {
     let array = num.toString().split("");
     let sum = 0;
     for (let i of array) {
@@ -15,6 +15,6 @@ function sum_of_digits(num) {
     return sum;
 }
 
-console.log(sum_of_digits(123));
-console.log(sum_of_digits(2345));
-console.log(sum_of_digits(5));
+console.log(SumOfDigits(123));
+console.log(SumOfDigits(2345));
+console.log(SumOfDigits(5));

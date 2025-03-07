@@ -5,7 +5,7 @@
 let nums = [2, 7, 11, 15];
 let target = 9;
 
-function twoSum(nums, target) {
+function TwoSum(nums, target) {
     for (let i = 0; i < nums.length; i++) {
         let complement = target - nums[i];
         for (let j = i + 1; j < nums.length; j++) {
@@ -16,4 +16,4 @@ function twoSum(nums, target) {
     }
 }
 
-console.log(twoSum(nums, target));
+console.log(TwoSum(nums, target));
