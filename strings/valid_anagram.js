@@ -4,19 +4,31 @@
 // Input: s = "listen", t = "silent"
 // Output: true
 
-function checkAnagram(s, t) {
-    let first_array = s.split("").sort();
-    let second_array = t.split("").sort();
-    if (first_array.length === second_array.length) {
-        if (first_array.join("") === second_array.join("")) {
-            return true;
-        } else {
-            return false;
-        }
-    } else {
-        return false;
-    }
+// function checkAnagram(s, t) {
+//     let first_array = s.split("").sort();
+//     let second_array = t.split("").sort();
+//     if (first_array.length === second_array.length) {
+//         if (first_array.join("") === second_array.join("")) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(checkAnagram("listen", "listen"));
+// console.log(checkAnagram("blue", "white"));
+
+// ***** Bolji nacin *****
+
+function ValidAnagram(stringOne, stringTwo) {
+    let s = stringOne.split("").sort().join("");
+    let t = stringTwo.split("").sort().join("");
+
+    return s === t;
 }
 
-console.log(checkAnagram("listen", "listen"));
-console.log(checkAnagram("blue", "white"));
+console.log(ValidAnagram("belo", "lobe"));
+console.log(ValidAnagram("rat", "car"));
