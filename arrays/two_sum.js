@@ -17,3 +17,20 @@ function TwoSum(nums, target) {
 }
 
 console.log(TwoSum(nums, target));
+
+// Drugi nacin
+
+// function TwoSum(nums, target) {
+//     let map = new Map(nums);
+//     for (let i = 0; i <= map.length; i++) {
+//         let complement = target - nums[i];
+
+//         if (map.has(complement)) {
+//             return [map.get(complement), i];
+//         }
+
+//         map.set([i], i);
+//     }
+
+//     return [];
+// }
